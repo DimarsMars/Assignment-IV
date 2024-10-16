@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="home">HOME</a></li>
+            <li class="nav-li"><a href="product">PRODUCT</a></li>
+            <li class="nav-li"><a href="gallery">GALLERY</a></li>
+            <li class="nav-li"><a href="blog">BLOG</a></li>
+            <li class="nav-li"><a href="inventory">INVENTORY</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="content-left">
+                <img src="IMG_20241008_233041_392.webp" alt="image">
+                <div class="content-button">
+                    <div class="content-name">
+                        <h1>Nama Anda</h1>
+                        <p>Front End Designer</p>
+                    </div>
+                    <div class="button">
+                        <button onclick="hideShow()" class="button-edit-remove">Edit</button>
+                        <button class="button-edit-remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                    <div class="table">
+                        <div class="table-tr-left">
+                            <p>Availability</p>
+                            <p>Usia</p>
+                            <p>Lokasi</p>
+                            <p>Pengalaman</p>
+                            <p>E-mail</p>
+                        </div>
+                        <div class="table-tr-right">
+                            <p>Fulltime</p>
+                            <p>15</p>
+                            <p>Denpasar Bali</p>
+                            <p>CEO Starlink</p>
+                            <p>dimasrangga@gmail.com</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2">
+            <form class="content-2">
+                <div class="form">
+                    <label class="label" for="">Nama</label>
+                    <input class="nama" type="text" placeholder="">
+                </div>
+                <div class="form">
+                    <label class="label" for="">Role</label>
+                    <input class="nama" type="text" placeholder="">
+                </div>
+                <div class="form"> 
+                    <label class="label" for="">Availability</label>
+                    <input class="nama" type="text" placeholder="">
+                </div>
+                <div class="form">
+                    <label class="label" for="">Usia</label>
+                    <input class="nama" type="int" placeholder="">
+                </div>
+                <div class="form">
+                    <label class="label" for="">Lokasi</label>
+                    <input class="nama" type="text" placeholder="">
+                </div>
+                <div class="form">
+                    <label class="label" for="">Years Experience</label>
+                    <input class="nama" type="text" placeholder="">
+                </div>
+                <div class="form">
+                    <label class="label" for="">Email</label>
+                    <input class="nama" type="text" placeholder="">
+                </div>
+                <br>
+                <input type="submit" value="SUBMIT" class="button-submit">
+            </form>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
