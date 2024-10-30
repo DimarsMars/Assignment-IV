@@ -120,7 +120,7 @@ img{
 
 
 .container-2{
-    display: flex;
+    display: none;
     justify-content: center;
     padding-top: 40px;
     align-items: center;
@@ -191,3 +191,9 @@ img{
 .table-tr-left{
     text-align: left;
 }
+
+/* .display {
+    display: flex;
+    flex-direction: row;
+    word-spacing: 20px;
+} */

@@ -23,12 +23,12 @@
                 <img src="IMG_20241008_233041_392.webp" alt="image">
                 <div class="content-button">
                     <div class="content-name">
-                        <h1>Nama Anda</h1>
-                        <p>Front End Designer</p>
+                        <h1 id="displayNama">Nama Anda</h1>
+                        <p id="displayRole">Front End Designer</p>
                     </div>
                     <div class="button">
-                        <button onclick="hideShow()" class="button-edit-remove">Edit</button>
-                        <button class="button-edit-remove">Remove</button>
+                        <button class="button-edit-remove" id="btn-edit">Edit</button>
+                        <button class="button-edit-remove" id="btn-remove">Remove</button>
                     </div>
                 </div>
             </div>
@@ -42,13 +42,40 @@
                             <p>E-mail</p>
                         </div>
                         <div class="table-tr-right">
-                            <p>Fulltime</p>
-                            <p>15</p>
-                            <p>Denpasar Bali</p>
-                            <p>CEO Starlink</p>
-                            <p>dimasrangga@gmail.com</p>
+                            <p id="displayAvailable">Fulltime</p>
+                            <p id="displayAge">15</p>
+                            <p id="displayLocation">Denpasar Bali</p>
+                            <p id="displayExp">CEO Starlink</p>
+                            <p id="displayEmail">dimasrangga620@gmail.com</p>
                         </div>
                     </div>
+
+                    <!-- <div class="table">
+                        <div class="table-tr-left">
+                            <div class="display">
+                                <p>Availability</p>
+                                <p id="displayAvailable">Fulltime</p>
+                            </div>
+                            <div class="display" >
+                                <p>Usia</p>
+                                <p id="displayAge">15</p>
+                            </div>
+                            <div class="display" >
+                                <p>Lokasi</p>
+                                <p id="displayLocation">Denpasar Bali</p>
+                            </div>
+                            <div class="display" >
+                                <p>Pengalaman</p>
+                                <p id="displayExp">CEO Starlink</p>
+                            </div>
+                            <div class="display" >
+                                <p>E-mail</p>
+                                <p id="displayEmail">dimasrangga620@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="table-tr-right">
+                        </div>
+                    </div> -->
             </div>
         </div>
     </div>
@@ -57,34 +84,34 @@
             <form class="content-2">
                 <div class="form">
                     <label class="label" for="">Nama</label>
-                    <input class="nama" type="text" placeholder="">
+                    <input id="form-nama" class="nama" type="text" placeholder="" >
                 </div>
                 <div class="form">
                     <label class="label" for="">Role</label>
-                    <input class="nama" type="text" placeholder="">
+                    <input id="form-role" class="nama" type="text" placeholder="">
                 </div>
                 <div class="form"> 
                     <label class="label" for="">Availability</label>
-                    <input class="nama" type="text" placeholder="">
+                    <input id="form-available" class="nama" type="text" placeholder="">
                 </div>
                 <div class="form">
                     <label class="label" for="">Usia</label>
-                    <input class="nama" type="int" placeholder="">
+                    <input id="form-usia" class="nama" type="int" placeholder="">
                 </div>
                 <div class="form">
                     <label class="label" for="">Lokasi</label>
-                    <input class="nama" type="text" placeholder="">
+                    <input id="form-lokasi" class="nama" type="text" placeholder="">
                 </div>
                 <div class="form">
                     <label class="label" for="">Years Experience</label>
-                    <input class="nama" type="text" placeholder="">
+                    <input id="form-yearsExp" class="nama" type="text" placeholder="">
                 </div>
                 <div class="form">
                     <label class="label" for="">Email</label>
-                    <input class="nama" type="text" placeholder="">
+                    <input id="form-email" class="nama" type="text" placeholder="">
                 </div>
                 <br>
-                <input type="submit" value="SUBMIT" class="button-submit">
+                <input type="submit" value="SUBMIT" class="button-submit" id="btn-submit">
             </form>
     </div>
 
