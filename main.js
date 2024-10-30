@@ -45,13 +45,13 @@ function displayData() {
 
     if(dataStorage) {
         // menampilkan data di display
-        document.querySelector("#displayNama").innerHTML = dataStorage.nama;
-        document.querySelector("#displayRole").innerHTML = dataStorage.role;
-        document.querySelector("#displayAvailable").innerHTML = dataStorage.availability;
-        document.querySelector("#displayAge").innerHTML = dataStorage.usia;
-        document.querySelector("#displayLocation").innerHTML = dataStorage.lokasi;
-        document.querySelector("#displayExp").innerHTML = dataStorage.yearsExperience;
-        document.querySelector("#displayEmail").innerHTML = dataStorage.email;
+        document.querySelector("#displayNama").innerHTML = dataStorage.nama || "Nama Anda";
+        document.querySelector("#displayRole").innerHTML = dataStorage.role || "Role Anda";
+        document.querySelector("#displayAvailable").innerHTML = dataStorage.availability || "-";
+        document.querySelector("#displayAge").innerHTML = dataStorage.usia || "-";
+        document.querySelector("#displayLocation").innerHTML = dataStorage.lokasi || "-";
+        document.querySelector("#displayExp").innerHTML = dataStorage.yearsExperience || "-";
+        document.querySelector("#displayEmail").innerHTML = dataStorage.email || "-";
 
         // menampilkan value pada input form sesuai data yang ada di display
         document.querySelector("#form-nama").value = dataStorage.nama;
