@@ -72,7 +72,6 @@ buttonRemove.addEventListener('click', () => {
 
 
 displayData();
-window.onload = displayData;
 
 
 
